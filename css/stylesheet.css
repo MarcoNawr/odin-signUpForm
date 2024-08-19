@@ -15,6 +15,7 @@
   --stdPadding: 1rem;
   --stdBorder: 1px solid black;
   --stdRadius: 0.25rem;
+  --stdGap: 2rem;
 
   --clrError400: red;
   --clrError300: rgb(238, 108, 108);
@@ -67,6 +68,44 @@
   border: 2px solid pink;
   /* flexchild */
   flex: 2;
+}
+.form {
+  height: 100%;
+  /* flexparent */
+  display: flex;
+  flex-direction: column;
+  gap: var(--stdGap);
+}
+.form__Area {
+  /* flexchild */
+  flex: 1;
+
+  padding: var(--stdPadding);
+}
+.form__AreaHeadline {
+  /* tbd: p zentrieren */
+
+  line-height: 1.5rem;
+}
+
+.form__AreaHeadline p {
+  font-weight: bolder;
+}
+.form__AreaInputs {
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
+
+.page__containerForm label {
+  display: block;
+}
+
+.inputContainer {
+  padding: 1rem 0px;
+
+  /* flexparent */
+  display: flex;
+  gap: var(--stdGap);
 }
 
 /* ========================================================================
