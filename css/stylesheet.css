@@ -1,0 +1,69 @@
+/* ========================================================================
+    ALL
+======================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================================================================
+    root
+======================================================================== */
+:root {
+  --stdMargin: 1rem;
+  --stdPadding: 1rem;
+  --stdBorder: 1px solid black;
+  --stdRadius: 0.25rem;
+
+  --clrError400: red;
+  --clrError300: rgb(238, 108, 108);
+  --clrFocus400: rgb(87, 172, 201);
+  --clrFocus300: rgb(161, 220, 240);
+  --clrOk400: green;
+  --clrOk300: rgb(69, 223, 69);
+  --clrBtnBackground: green;
+  --clrBtnHoverBackground: rgb(69, 223, 69, 0.8);
+  --clrBtnText: white;
+}
+
+/* ========================================================================
+    page
+======================================================================== */
+.page {
+  border: 2px solid red;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+}
+
+/* ========================================================================
+    page__container
+======================================================================== */
+.page__container {
+}
+
+/* ========================================================================
+    page__containerImg
+======================================================================== */
+.page__containerImg {
+  border: 2px solid pink;
+
+  background-image: url(../img/Bilder_11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* flexchild */
+  flex: 1;
+}
+
+/* ========================================================================
+    page__containerForm
+======================================================================== */
+.page__containerForm {
+  border: 2px solid pink;
+  /* flexchild */
+  flex: 2;
+}
