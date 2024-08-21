@@ -32,7 +32,6 @@
     page
 ======================================================================== */
 .page {
-  border: 2px solid red;
   width: 100vw;
   height: 100vh;
   background-color: rgb(250, 250, 250);
@@ -50,22 +49,50 @@
     page__containerImg
 ======================================================================== */
 .page__containerImg {
-  border: 2px solid pink;
-
-  background-image: url(../img/Bilder_11.jpg);
+  background-image: url(../img/Bilder_12.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   /* flexchild */
   flex: 1;
+
+  /* felxparent */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.companyArea {
+  height: 6rem;
+  background-color: hsl(0, 0%, 4%, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.companyArea img {
+  padding: 1rem;
+  height: 100%;
+}
+.companyArea p {
+  padding: 1rem;
+  font-size: 3rem;
+  color: white;
+}
+.copyright {
+  /* TODO: Solution to put this at the end of the page */
+  position: absolute;
+  bottom: 5px;
+  padding: var(--stdPadding);
+  text-align: center;
+  color: white;
+  font-size: 0.7rem;
 }
 
 /* ========================================================================
     page__containerForm
 ======================================================================== */
 .page__containerForm {
-  border: 2px solid pink;
   /* flexchild */
   flex: 2;
 }
@@ -93,7 +120,7 @@
 }
 .form__AreaInputs {
   background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  box-shadow: 0px 15px 30px #bebebe;
 }
 
 .page__containerForm label {
@@ -155,7 +182,7 @@
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: #009087;
+  background-color: #00afb5;
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -164,7 +191,7 @@
 
 .btn:hover {
   color: #ffffff;
-  border: 1px solid #009087;
+  border: 1px solid #00afb5;
 }
 
 .btn:hover:before {
