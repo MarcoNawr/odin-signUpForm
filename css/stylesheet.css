@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "amatic_scregular";
+  src: url("amaticsc-regular-webfont.woff2") format("woff2"),
+    url("amaticsc-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ========================================================================
     ALL
 ======================================================================== */
@@ -19,9 +27,9 @@
   --stdGap: 2rem;
 
   --clrError400: red;
-  --clrError300: rgb(238, 108, 108);
+  --clrError300: rgb(247, 171, 171);
   --clrFocus400: rgb(87, 172, 201);
-  --clrFocus300: rgb(161, 220, 240);
+  --clrFocus300: rgb(197, 239, 253);
   --clrOk400: green;
   --clrOk300: rgb(69, 223, 69);
   --clrBtnBackground: green;
@@ -111,13 +119,18 @@
   padding: var(--stdPadding);
 }
 .form__AreaHeadline {
-  /* tbd: p zentrieren */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   line-height: 1.5rem;
 }
 
 .form__AreaHeadline p {
   font-weight: bolder;
+  font-size: 1.4rem;
+  width: 60ch;
 }
 .form__AreaInputs {
   background: #e0e0e0;
@@ -129,10 +142,18 @@
 }
 
 .inputContainer {
-  padding: 1rem 0px;
+  padding: 0.5rem 0px;
 
   /* flexparent */
   display: flex;
+  gap: var(--stdGap);
+}
+
+.form__AreaConfirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: var(--stdGap);
 }
 
@@ -222,19 +243,20 @@
 }
 
 .stdInput:invalid {
-  border-color: red;
-  color: red;
-  background-color: pink;
+  color: var(--clrError400);
+  background-color: var(--clrError300);
+  .errorMessage {
+    display: block;
+  }
 }
 
 .stdInput:focus {
-  border-color: blue;
-  color: blue;
-  background-color: rgb(170, 219, 250);
+  color: var(--clrFocus400);
+  background-color: var(--clrFocus300);
 }
 
 .errorMessage {
   font-size: 0.8rem;
-  color: red;
+  color: var(--clrError400);
   display: none;
 }
