@@ -13,6 +13,7 @@
 :root {
   --stdMargin: 1rem;
   --stdPadding: 1rem;
+  --stdPaddingInput: 0.4rem;
   --stdBorder: 1px solid black;
   --stdRadius: 0.25rem;
   --stdGap: 2rem;
@@ -209,3 +210,31 @@
 /* ========================================================================
     containerForm ==> INPUTS / Messages
 ======================================================================== */
+.inpGroup {
+  padding: 0.5rem;
+}
+.inpGroup * {
+  margin: 0.2rem;
+}
+
+.stdInput {
+  padding: var(--stdPaddingInput);
+}
+
+.stdInput:invalid {
+  border-color: red;
+  color: red;
+  background-color: pink;
+}
+
+.stdInput:focus {
+  border-color: blue;
+  color: blue;
+  background-color: rgb(170, 219, 250);
+}
+
+.errorMessage {
+  font-size: 0.8rem;
+  color: red;
+  display: none;
+}
