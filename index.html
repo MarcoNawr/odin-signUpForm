@@ -55,11 +55,13 @@
                 <div class="inpGroup">
                   <label for="inpPassword">Password:</label>
                   <input
-                    class="stdInput"
+                    class="stdInput inpPassword"
                     type="password"
                     name="inpPassword"
                     id="inpPassword"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                   />
+                  <!--Password (UpperCase, LowerCase and Number) -->
                   <p class="errorMessage">Ich bin ein Fehlertext</p>
                 </div>
               </div>
@@ -92,7 +94,9 @@
                     type="password"
                     name="inpConfirmPassword"
                     id="inpConfirmPassword"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                   />
+                  <!--Password (UpperCase, LowerCase and Number) -->
                   <p class="errorMessage">Ich bin ein Fehlertext</p>
                 </div>
               </div>

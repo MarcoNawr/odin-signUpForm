@@ -19,9 +19,9 @@
   --stdGap: 2rem;
 
   --clrError400: red;
-  --clrError300: rgb(247, 171, 171);
-  --clrFocus400: rgb(87, 172, 201);
-  --clrFocus300: rgb(197, 239, 253);
+  --clrError300: rgb(255, 220, 220);
+  --clrFocus400: rgb(50, 157, 192);
+  --clrFocus300: rgb(241, 251, 255);
   --clrOk400: green;
   --clrOk300: rgb(69, 223, 69);
   --clrBtnBackground: green;
@@ -124,7 +124,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
   line-height: 1.5rem;
 }
@@ -255,6 +255,7 @@
 .stdInput:focus {
   color: var(--clrFocus400);
   background-color: var(--clrFocus300);
+  outline-color: var(--clrFocus400);
 }
 
 .errorMessage {
